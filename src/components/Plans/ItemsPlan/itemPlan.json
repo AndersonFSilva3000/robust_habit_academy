@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "image": "/assets/pass1Day.png",
+    "title": "passe de 1 dia",
+    "select": {
+      "description": "Teste gratuitamente",
+      "prince": null
+    },
+    "recommended": false
+  },
+  {
+    "id": 2,
+    "image": "/assets/pass1Month.png",
+    "title": "passe de 1 MÊS",
+    "select": {
+      "description": "À partir de",
+      "prince": 99.9
+    },
+    "recommended": true
+  },
+  {
+    "id": 3,
+    "image": "/assets/pass1Year.png",
+    "title": "passe de 1 ANO",
+    "select": {
+      "description": "À partir de",
+      "prince": 999
+    },
+    "recommended": false
+  }
+]
