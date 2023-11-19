@@ -7,7 +7,9 @@ const FastMarquee = () => {
   return (
     <Marquee style={{ marginTop: '-1rem' }}>
       <S.ContainerSlick>
+        <img src={weight} alt="" />
         <p>consultoria individual </p>
+
         <img src={weight} alt="" />
         <p>+20 professores</p>
 
@@ -19,8 +21,6 @@ const FastMarquee = () => {
 
         <img src={weight} alt="" />
         <p>montamos seu treino</p>
-
-        <img src={weight} alt="" />
       </S.ContainerSlick>
     </Marquee>
   )

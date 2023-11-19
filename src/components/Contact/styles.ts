@@ -21,6 +21,10 @@ export const ContainerContact = styled.div`
       font-size: 2rem;
       margin-bottom: 1.5rem;
     }
+
+    @media (max-width: ${Breakpoints.mobile}) {
+      text-align: center;
+    }
   }
 
   p {
@@ -49,6 +53,14 @@ export const ContainerInput = styled.div`
   div {
     position: relative;
     padding: 1.875rem 1.875rem 1.875rem 0;
+
+    @media (max-width: ${Breakpoints.mobile}) {
+      padding-bottom: 1rem;
+    }
+  }
+
+  @media (max-width: ${Breakpoints.mobile}) {
+    flex-direction: column;
   }
 `
 

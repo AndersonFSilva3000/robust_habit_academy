@@ -15,4 +15,9 @@ export const ContainerItems = styled.div`
   @media (max-width: ${Breakpoints.tablet}) {
     margin: 5rem 0;
   }
+
+  @media (max-width: ${Breakpoints.mobile}) {
+    grid-template-columns: 1fr;
+    margin-top: 3rem;
+  }
 `

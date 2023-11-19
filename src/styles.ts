@@ -38,6 +38,11 @@ export const GlobalCss = createGlobalStyle`
   .container {
     padding-left: 5rem;
     padding-right: 5rem;
+
+    @media (max-width: ${Breakpoints.mobile}) {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
   }
 `
 

@@ -29,4 +29,16 @@ export const ContainerItemsPlan = styled.div`
       grid-area: grid3;
     }
   }
+
+  @media (max-width: ${Breakpoints.mobile}) {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      'grid2'
+      'grid1'
+      'grid3';
+  }
+
+  .grid2 {
+    max-width: 100%;
+  }
 `

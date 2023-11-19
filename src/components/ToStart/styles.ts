@@ -63,4 +63,8 @@ export const ImgSettings = styled.img`
   @media (max-width: ${Breakpoints.tablet}) {
     max-width: 18.75rem;
   }
+
+  @media (max-width: ${Breakpoints.mobile}) {
+    display: none;
+  }
 `

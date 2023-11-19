@@ -21,5 +21,9 @@ export const Container = styled.div`
       font-size: 2rem;
       margin-top: 5rem;
     }
+
+    @media (max-width: ${Breakpoints.mobile}) {
+      margin-top: 3rem;
+    }
   }
 `

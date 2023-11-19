@@ -23,6 +23,10 @@ export const ContainerFamily = styled.div`
       display: none;
     }
   }
+
+  @media (max-width: ${Breakpoints.mobile}) {
+    flex-direction: column;
+  }
 `
 
 export const ContainerDescriptions = styled.div`
@@ -37,6 +41,10 @@ export const ContainerDescriptions = styled.div`
 
   @media (max-width: ${Breakpoints.tablet}) {
     margin-top: 5rem;
+  }
+
+  @media (max-width: ${Breakpoints.mobile}) {
+    margin-left: 0;
   }
 
   h3 {
@@ -65,6 +73,10 @@ export const ContainerDescriptions = styled.div`
     @media (max-width: ${Breakpoints.tablet}) {
       display: inline-block;
     }
+
+    @media (max-width: ${Breakpoints.mobile}) {
+      display: block;
+    }
   }
 
   p {
@@ -87,6 +99,10 @@ export const ContainerSecondary = styled.div`
   column-gap: 3rem;
   margin-bottom: 10.375rem;
 
+  p {
+    text-align: center;
+  }
+
   @media (max-width: ${Breakpoints.tablet}) {
     margin-bottom: 5rem;
   }
@@ -103,10 +119,14 @@ export const ContainerSecondary = styled.div`
     @media (max-width: ${Breakpoints.tablet}) {
       font-size: 1.5rem;
     }
+
+    @media (max-width: ${Breakpoints.mobile}) {
+      margin: 1rem 0;
+    }
   }
 
-  p {
-    text-align: center;
+  @media (max-width: ${Breakpoints.mobile}) {
+    flex-direction: column;
   }
 `
 

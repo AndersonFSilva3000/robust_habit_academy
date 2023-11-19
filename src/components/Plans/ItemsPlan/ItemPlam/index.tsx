@@ -6,6 +6,13 @@ type Props = (typeof itemList)[0]
 const ItemPlan = (props: Props) => {
   const { image, select, title, recommended } = props
 
+  const parceToBrl = (amout = 0) => {
+    return new Intl.NumberFormat('pt-BR', {
+      style: 'currency',
+      currency: 'BRL'
+    }).format(amout)
+  }
+
   return (
     <S.ContainerItemPlan className={recommended ? 'recommended' : ''}>
       <span>RECOMENDADO POR USUÁRIOS</span>
@@ -14,7 +21,7 @@ const ItemPlan = (props: Props) => {
       {select.prince ? (
         <S.ContainerSelect>
           <p>
-            {select.description} <span>{select.prince}</span>
+            {select.description} <span>{parceToBrl(select.prince)}</span>
           </p>
           <S.ButtonItemPlan>Selecionar</S.ButtonItemPlan>
         </S.ContainerSelect>
